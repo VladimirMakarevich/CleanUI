@@ -1,0 +1,17 @@
+<h2>{{title}}</h2>
+<hr>
+<div>
+  <h3>Button <small>example:</small></h3>
+  <app-button
+    (submit)="handleButtonExample($event)">
+    Button
+  </app-button>
+
+  <p *ngIf="buttonResultText">
+    {{buttonResultText}}
+  </p>
+
+</div>
+<hr>
+
+<router-outlet></router-outlet>
