@@ -1,0 +1,12 @@
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+
+.server-scrolling {
+  height: calc(100vh - 110px);
+}
+
+::ng-deep .progress-linear {
+  position: fixed !important;
+  bottom: 0px;
+}

@@ -1,0 +1,6 @@
+<div>
+  <input type="checkbox" [formControl]="control">
+  <app-text-error *ngIf="control?.invalid && control?.touched">
+    {{ error }}
+  </app-text-error>
+</div>

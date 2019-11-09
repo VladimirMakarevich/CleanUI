@@ -1,0 +1,15 @@
+<div>
+  <ng-container>
+    <div>
+      {{user.userName}}
+    </div>
+  </ng-container>
+
+  <ng-container *ngFor="let profileItem of profileItems">
+    <br>
+    <a *ngIf="!profileItem.hidden"
+       [routerLink]="[profileItem.link]">
+      <span>{{ profileItem.title }}</span>
+    </a>
+  </ng-container>
+</div>

@@ -1,0 +1,14 @@
+<div>
+  <ngx-datatable
+    class="material server-scrolling"
+    [rows]="rows"
+    [columns]="columns"
+    [columnMode]="columnMode"
+    [headerHeight]="headerHeight"
+    [rowHeight]="rowHeight"
+    [loadingIndicator]="isLoading"
+    [scrollbarV]="scrollbarVirtual"
+    (scroll)="scroll($event)"
+  >
+  </ngx-datatable>
+</div>

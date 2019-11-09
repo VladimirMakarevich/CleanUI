@@ -1,0 +1,11 @@
+<app-file-area>
+  <app-image [imageSrc]="imageSrc">
+  </app-image>
+
+  <app-text *ngIf="!imageSrc">
+    Upload or drag files here
+  </app-text>
+
+  <app-file-input (handleEvent)="handleFilePreview($event)">
+  </app-file-input>
+</app-file-area>

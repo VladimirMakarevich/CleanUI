@@ -1,0 +1,10 @@
+<picture *ngIf="imageSrc">
+  <source
+    [media]="maxWidth"
+    srcset="{{imageSrc}}"
+  />
+
+  <img
+    src="{{imageSrc}}" alt="logo" [width]="width"
+  />
+</picture>

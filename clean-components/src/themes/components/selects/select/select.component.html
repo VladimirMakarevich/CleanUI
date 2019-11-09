@@ -1,0 +1,12 @@
+<div class="app-option">
+  <!--<app-input [control]="searchControl" [name]="inputName">-->
+    <!--<ng-content></ng-content>-->
+  <!--</app-input>-->
+  <div *ngFor="let option of options">
+    {{option.name}}
+  </div>
+
+  <app-text-error *ngIf="control?.invalid">
+    {{ error }}
+  </app-text-error>
+</div>
